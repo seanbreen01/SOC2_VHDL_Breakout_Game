@@ -1,0 +1,6 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Note: %N : Simulation Start.
+Time: 0 ps  Iteration: 0  Process: /gameAndReg32x32_TB/stim  File: C:/Vicilog/game/game/testbench/gameAndReg32x32_TB.vhd
+Note: simulation done
+Time: 208984 ns  Iteration: 0  Process: /gameAndReg32x32_TB/stim  File: C:/Vicilog/game/game/testbench/gameAndReg32x32_TB.vhd
