@@ -154,8 +154,12 @@ begin
 			NSWallVec           <= reg4x32_CSRA(3);
 			NSBallXAdd 	        <= to_integer( unsigned(reg4x32_CSRA(2)(28 downto 24)) );
 			NSBallYAdd 	        <= to_integer( unsigned(reg4x32_CSRA(2)(20 downto 16)) );
-			NSLives             <= to_integer( unsigned(reg4x32_CSRA(2)( 3 downto  0)) );
-			NSScore             <= to_integer( unsigned(reg4x32_CSRA(2)( 7 downto  4)) );        --change to 8 from 7 if want to input score of 30 for testing
+			--NSLives             <= to_integer( unsigned(reg4x32_CSRA(2)( 3 downto  0)) );
+			--NSScore             <= to_integer( unsigned(reg4x32_CSRA(2)( 7 downto  4)) );        --change to 8 from 7 if want to input score of 30 for testing
+			
+			NSLives             <= to_integer( unsigned(reg4x32_CSRA(2)( 15 downto  8)) );		--changed these to match testbench spec
+			NSScore             <= to_integer( unsigned(reg4x32_CSRA(2)( 7 downto  0)) ); 
+			
 			NSBallVec           <= reg4x32_CSRA(1);
 
 			NSPaddleVec         <= reg4x32_CSRB(3);
@@ -571,7 +575,7 @@ begin
              add(7 downto 5)          <= "010";                                          -- reg32x32 memory bank select 
              add(4 downto 0)          <= "00010";										 -- row address 1
 	   		 datToMem                 <= (others => '0');							     -- clear vector  
-   	         datToMem 			      <= reg4x32_CSRB(3);
+   	         datToMem 			      <= CSPaddleVec;
 			 NSPaddleLSB 			  <= 13;								--reset paddle LSB to maintain track of it accurately
 			 NS                       <= waitState; 
 		

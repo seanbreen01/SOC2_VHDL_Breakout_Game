@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Nov 23 16:54:29 2022
-# Process ID: 34372
+# Start of session at: Wed Nov 23 19:39:15 2022
+# Process ID: 32680
 # Current directory: C:/Vicilog/game/game/xilinxprj/game.runs/synth_1
 # Command line: vivado.exe -log gameAndReg32x32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gameAndReg32x32.tcl
 # Log file: C:/Vicilog/game/game/xilinxprj/game.runs/synth_1/gameAndReg32x32.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12096 
+INFO: Helper process launched with PID 36468 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.320 ; gain = 164.641
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.031 ; gain = 157.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'gameAndReg32x32' [C:/Vicilog/game/game/gameAndReg32x32.vhd:32]
 INFO: [Synth 8-3491] module 'game' declared at 'C:/Vicilog/game/game/game.vhd:41' bound to instance 'game_i' of component 'game' [C:/Vicilog/game/game/gameAndReg32x32.vhd:46]
@@ -34,11 +34,9 @@ WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][21]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][15]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][14]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][13]
-WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][12]
-WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][11]
-WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][10]
-WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][9]
-WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][8]
+WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][7]
+WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][6]
+WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[2][5]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[0][1]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRA[0][0]
 WARNING: [Synth 8-3331] design game has unconnected port reg4x32_CSRB[2][31]
@@ -125,22 +123,24 @@ WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[236]
 WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[235]
 WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[234]
 WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[233]
+WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[232]
+WARNING: [Synth 8-3331] design game has unconnected port BRAM_dOut[231]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 506.711 ; gain = 227.031
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 506.945 ; gain = 220.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 506.711 ; gain = 227.031
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 506.945 ; gain = 220.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 506.711 ; gain = 227.031
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 506.945 ; gain = 220.723
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Vicilog/game/game/game.vhd:216]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Vicilog/game/game/game.vhd:220]
 INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'game'
 INFO: [Synth 8-5546] ROM "active" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "NSBallVec" won't be mapped to RAM because it is too sparse
@@ -170,7 +170,7 @@ INFO: [Synth 8-5546] ROM "NSBallVec" won't be mapped to RAM because it is too sp
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'game'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 528.727 ; gain = 249.047
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 537.418 ; gain = 251.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,7 +277,7 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\game_i/CSDlyCountMax_reg[20] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -290,7 +290,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,7 +302,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,7 +326,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -339,7 +339,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -351,25 +351,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -387,45 +387,45 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |     7|
 |2     |LUT1   |     2|
-|3     |LUT2   |    32|
-|4     |LUT3   |    40|
-|5     |LUT4   |    56|
-|6     |LUT5   |    92|
-|7     |LUT6   |   629|
-|8     |MUXF7  |   128|
-|9     |MUXF8  |     4|
-|10    |FDCE   |  1217|
+|3     |LUT2   |    28|
+|4     |LUT3   |    41|
+|5     |LUT4   |    75|
+|6     |LUT5   |   115|
+|7     |LUT6   |   573|
+|8     |MUXF7  |   129|
+|9     |MUXF8  |     7|
+|10    |FDCE   |  1215|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |  2207|
-|2     |  game_i |game   |  1183|
+|1     |top      |       |  2192|
+|2     |  game_i |game   |  1168|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 810.320 ; gain = 530.641
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 667 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 810.320 ; gain = 530.641
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 810.320 ; gain = 530.641
+Synthesis finished with 0 errors, 0 critical warnings and 663 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 816.719 ; gain = 530.496
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 139 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 810.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 816.719 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 23 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 810.320 ; gain = 530.641
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 810.320 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 816.719 ; gain = 530.496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 816.719 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Vicilog/game/game/xilinxprj/game.runs/synth_1/gameAndReg32x32.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file gameAndReg32x32_utilization_synth.rpt -pb gameAndReg32x32_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 16:55:01 2022...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 19:39:47 2022...

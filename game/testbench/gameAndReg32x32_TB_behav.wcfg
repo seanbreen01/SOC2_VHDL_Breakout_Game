@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="51769625000fs"></ZoomStartTime>
-      <ZoomEndTime time="56018858914fs"></ZoomEndTime>
-      <Cursor1Time time="53880000000fs"></Cursor1Time>
+      <ZoomStartTime time="173066950000fs"></ZoomStartTime>
+      <ZoomEndTime time="186681459024fs"></ZoomEndTime>
+      <Cursor1Time time="402500000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="228"></NameColumnWidth>
-      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="3" />
    <wvobject fp_name="group53" type="group">
@@ -501,6 +501,10 @@
       <wvobject fp_name="/gameAndReg32x32_TB/uut/game_i/CSPaddleLSB" type="other">
          <obj_property name="ElementShortName">CSPaddleLSB</obj_property>
          <obj_property name="ObjectShortName">CSPaddleLSB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/gameAndReg32x32_TB/uut/game_i/CSResetFlag" type="other">
+         <obj_property name="ElementShortName">CSResetFlag</obj_property>
+         <obj_property name="ObjectShortName">CSResetFlag</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>
